@@ -3,4 +3,5 @@
 
 # Carthage 
 github "jack8525/SZKit"
+
 carthage update --platform iOS
