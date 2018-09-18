@@ -13,7 +13,38 @@
 		1022026A21508DB5000C02D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1022026921508DB5000C02D0 /* Assets.xcassets */; };
 		1022026D21508DB5000C02D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1022026B21508DB5000C02D0 /* LaunchScreen.storyboard */; };
 		1022027021508DB5000C02D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1022026F21508DB5000C02D0 /* main.m */; };
+		10220279215090A7000C02D0 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 10220278215090A7000C02D0 /* NSObject+Log.m */; };
+		1022029C21509441000C02D0 /* SZKitFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022029A21509441000C02D0 /* SZKitFramework.h */; };
+		1022029F21509441000C02D0 /* SZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1022029821509441000C02D0 /* SZKit.framework */; };
+		102202A021509441000C02D0 /* SZKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1022029821509441000C02D0 /* SZKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		102202A42150944C000C02D0 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 10220278215090A7000C02D0 /* NSObject+Log.m */; };
+		102202A621509543000C02D0 /* SZKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202A521509543000C02D0 /* SZKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102202AB21509CA7000C02D0 /* NSObject+Log.h in Headers */ = {isa = PBXBuildFile; fileRef = 10220277215090A7000C02D0 /* NSObject+Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1022029D21509441000C02D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1022025521508DB4000C02D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1022029721509441000C02D0;
+			remoteInfo = SZKitFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1022028C2150917F000C02D0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				102202A021509441000C02D0 /* SZKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1022025D21508DB4000C02D0 /* SZKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +57,24 @@
 		1022026C21508DB5000C02D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1022026E21508DB5000C02D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1022026F21508DB5000C02D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		10220277215090A7000C02D0 /* NSObject+Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
+		10220278215090A7000C02D0 /* NSObject+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
+		1022029821509441000C02D0 /* SZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1022029A21509441000C02D0 /* SZKitFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZKitFramework.h; sourceTree = "<group>"; };
+		1022029B21509441000C02D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		102202A521509543000C02D0 /* SZKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1022025A21508DB4000C02D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1022029F21509441000C02D0 /* SZKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1022029421509441000C02D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				1022025F21508DB4000C02D0 /* SZKit */,
+				1022029921509441000C02D0 /* SZKitFramework */,
 				1022025E21508DB4000C02D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1022025D21508DB4000C02D0 /* SZKit.app */,
+				1022029821509441000C02D0 /* SZKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +105,7 @@
 		1022025F21508DB4000C02D0 /* SZKit */ = {
 			isa = PBXGroup;
 			children = (
+				1022027621509086000C02D0 /* Category */,
 				1022026021508DB4000C02D0 /* AppDelegate.h */,
 				1022026121508DB4000C02D0 /* AppDelegate.m */,
 				1022026321508DB4000C02D0 /* ViewController.h */,
@@ -67,11 +115,43 @@
 				1022026B21508DB5000C02D0 /* LaunchScreen.storyboard */,
 				1022026E21508DB5000C02D0 /* Info.plist */,
 				1022026F21508DB5000C02D0 /* main.m */,
+				102202A521509543000C02D0 /* SZKit.h */,
 			);
 			path = SZKit;
 			sourceTree = "<group>";
 		};
+		1022027621509086000C02D0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				10220277215090A7000C02D0 /* NSObject+Log.h */,
+				10220278215090A7000C02D0 /* NSObject+Log.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1022029921509441000C02D0 /* SZKitFramework */ = {
+			isa = PBXGroup;
+			children = (
+				1022029A21509441000C02D0 /* SZKitFramework.h */,
+				1022029B21509441000C02D0 /* Info.plist */,
+			);
+			path = SZKitFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1022029521509441000C02D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102202A621509543000C02D0 /* SZKit.h in Headers */,
+				102202AB21509CA7000C02D0 /* NSObject+Log.h in Headers */,
+				1022029C21509441000C02D0 /* SZKitFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1022025C21508DB4000C02D0 /* SZKit */ = {
@@ -81,15 +161,35 @@
 				1022025921508DB4000C02D0 /* Sources */,
 				1022025A21508DB4000C02D0 /* Frameworks */,
 				1022025B21508DB4000C02D0 /* Resources */,
+				1022028C2150917F000C02D0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1022029E21509441000C02D0 /* PBXTargetDependency */,
 			);
 			name = SZKit;
 			productName = SZKit;
 			productReference = 1022025D21508DB4000C02D0 /* SZKit.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1022029721509441000C02D0 /* SZKitFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 102202A121509441000C02D0 /* Build configuration list for PBXNativeTarget "SZKitFramework" */;
+			buildPhases = (
+				1022029321509441000C02D0 /* Sources */,
+				1022029421509441000C02D0 /* Frameworks */,
+				1022029521509441000C02D0 /* Headers */,
+				1022029621509441000C02D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SZKitFramework;
+			productName = SZKitFramework;
+			productReference = 1022029821509441000C02D0 /* SZKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +201,9 @@
 				ORGANIZATIONNAME = "张杰华";
 				TargetAttributes = {
 					1022025C21508DB4000C02D0 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					1022029721509441000C02D0 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -119,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				1022025C21508DB4000C02D0 /* SZKit */,
+				1022029721509441000C02D0 /* SZKitFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +238,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1022029621509441000C02D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -143,11 +254,28 @@
 			files = (
 				1022026521508DB4000C02D0 /* ViewController.m in Sources */,
 				1022027021508DB5000C02D0 /* main.m in Sources */,
+				10220279215090A7000C02D0 /* NSObject+Log.m in Sources */,
 				1022026221508DB4000C02D0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1022029321509441000C02D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102202A42150944C000C02D0 /* NSObject+Log.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1022029E21509441000C02D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1022029721509441000C02D0 /* SZKitFramework */;
+			targetProxy = 1022029D21509441000C02D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1022026621508DB4000C02D0 /* Main.storyboard */ = {
@@ -286,6 +414,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGE7A98KCX;
 				INFOPLIST_FILE = SZKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGE7A98KCX;
 				INFOPLIST_FILE = SZKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +440,66 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nenglong.SZKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		102202A221509441000C02D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZGE7A98KCX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SZKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenglong.SZKitFramework;
+				PRODUCT_MODULE_NAME = SZKit;
+				PRODUCT_NAME = SZKit;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		102202A321509441000C02D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZGE7A98KCX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SZKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenglong.SZKitFramework;
+				PRODUCT_MODULE_NAME = SZKit;
+				PRODUCT_NAME = SZKit;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -330,6 +520,15 @@
 			buildConfigurations = (
 				1022027421508DB5000C02D0 /* Debug */,
 				1022027521508DB5000C02D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		102202A121509441000C02D0 /* Build configuration list for PBXNativeTarget "SZKitFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				102202A221509441000C02D0 /* Debug */,
+				102202A321509441000C02D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
