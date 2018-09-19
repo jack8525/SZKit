@@ -9,5 +9,13 @@
 #ifndef SZKit_h
 #define SZKit_h
 
+#import "SZFileManager.h"
+
+#import "NSString+SZ.h"
+#import "NSDateFormatter+SZ.h"
+#import "NSDate+SZ.h"
+#import "UILabel+SZ.h"
+#import "NSObject+SZ.h"
+#import "UIViewController+SZ.h"
 
 #endif /* SZKit_h */
