@@ -32,6 +32,13 @@
 		102202D721523407000C02D0 /* UIViewController+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202D621523407000C02D0 /* UIViewController+SZ.m */; };
 		102202D82152340A000C02D0 /* UIViewController+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202D621523407000C02D0 /* UIViewController+SZ.m */; };
 		102202D921523412000C02D0 /* SZFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202B12150A6D1000C02D0 /* SZFileManager.m */; };
+		102202DA21524126000C02D0 /* NSString+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202B62150F07B000C02D0 /* NSString+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102202DB2152412B000C02D0 /* NSDateFormatter+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202CA215230C1000C02D0 /* NSDateFormatter+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102202DC2152412E000C02D0 /* SZFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202B02150A6D1000C02D0 /* SZFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102202DD21524132000C02D0 /* NSDate+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202D1215231D6000C02D0 /* NSDate+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102202DE21524136000C02D0 /* UILabel+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202C721522FC1000C02D0 /* UILabel+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102202DF21524139000C02D0 /* NSObject+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202B92151DAFA000C02D0 /* NSObject+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102202E02152413E000C02D0 /* UIViewController+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202D521523407000C02D0 /* UIViewController+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +215,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				102202B52150AB54000C02D0 /* GlobalDefine.h in Headers */,
+				102202E02152413E000C02D0 /* UIViewController+SZ.h in Headers */,
+				102202DF21524139000C02D0 /* NSObject+SZ.h in Headers */,
+				102202DD21524132000C02D0 /* NSDate+SZ.h in Headers */,
+				102202DE21524136000C02D0 /* UILabel+SZ.h in Headers */,
+				102202DB2152412B000C02D0 /* NSDateFormatter+SZ.h in Headers */,
+				102202DA21524126000C02D0 /* NSString+SZ.h in Headers */,
+				102202DC2152412E000C02D0 /* SZFileManager.h in Headers */,
 				102202A621509543000C02D0 /* SZKit.h in Headers */,
 				1022029C21509441000C02D0 /* SZKitFramework.h in Headers */,
 			);
