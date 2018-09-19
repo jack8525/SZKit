@@ -9,6 +9,5 @@
 #ifndef SZKit_h
 #define SZKit_h
 
-#import "NSObject+Log.h"
 
 #endif /* SZKit_h */

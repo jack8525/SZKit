@@ -13,13 +13,25 @@
 		1022026A21508DB5000C02D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1022026921508DB5000C02D0 /* Assets.xcassets */; };
 		1022026D21508DB5000C02D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1022026B21508DB5000C02D0 /* LaunchScreen.storyboard */; };
 		1022027021508DB5000C02D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1022026F21508DB5000C02D0 /* main.m */; };
-		10220279215090A7000C02D0 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 10220278215090A7000C02D0 /* NSObject+Log.m */; };
 		1022029C21509441000C02D0 /* SZKitFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022029A21509441000C02D0 /* SZKitFramework.h */; };
 		1022029F21509441000C02D0 /* SZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1022029821509441000C02D0 /* SZKit.framework */; };
 		102202A021509441000C02D0 /* SZKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1022029821509441000C02D0 /* SZKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		102202A42150944C000C02D0 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 10220278215090A7000C02D0 /* NSObject+Log.m */; };
 		102202A621509543000C02D0 /* SZKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202A521509543000C02D0 /* SZKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		102202AB21509CA7000C02D0 /* NSObject+Log.h in Headers */ = {isa = PBXBuildFile; fileRef = 10220277215090A7000C02D0 /* NSObject+Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102202B22150A6D1000C02D0 /* SZFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202B12150A6D1000C02D0 /* SZFileManager.m */; };
+		102202B52150AB54000C02D0 /* GlobalDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202B42150AB54000C02D0 /* GlobalDefine.h */; };
+		102202B82150F07B000C02D0 /* NSString+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202B72150F07B000C02D0 /* NSString+SZ.m */; };
+		102202BB2151DAFA000C02D0 /* NSObject+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202BA2151DAFA000C02D0 /* NSObject+SZ.m */; };
+		102202C921522FC1000C02D0 /* UILabel+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202C821522FC1000C02D0 /* UILabel+SZ.m */; };
+		102202CC215230C1000C02D0 /* NSDateFormatter+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202CB215230C1000C02D0 /* NSDateFormatter+SZ.m */; };
+		102202CD215230CB000C02D0 /* NSString+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202B72150F07B000C02D0 /* NSString+SZ.m */; };
+		102202CE215230CC000C02D0 /* NSDateFormatter+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202CB215230C1000C02D0 /* NSDateFormatter+SZ.m */; };
+		102202CF215230CF000C02D0 /* UILabel+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202C821522FC1000C02D0 /* UILabel+SZ.m */; };
+		102202D0215230D1000C02D0 /* NSObject+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202BA2151DAFA000C02D0 /* NSObject+SZ.m */; };
+		102202D3215231D6000C02D0 /* NSDate+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202D2215231D6000C02D0 /* NSDate+SZ.m */; };
+		102202D4215231D8000C02D0 /* NSDate+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202D2215231D6000C02D0 /* NSDate+SZ.m */; };
+		102202D721523407000C02D0 /* UIViewController+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202D621523407000C02D0 /* UIViewController+SZ.m */; };
+		102202D82152340A000C02D0 /* UIViewController+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202D621523407000C02D0 /* UIViewController+SZ.m */; };
+		102202D921523412000C02D0 /* SZFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 102202B12150A6D1000C02D0 /* SZFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +69,25 @@
 		1022026C21508DB5000C02D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1022026E21508DB5000C02D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1022026F21508DB5000C02D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		10220277215090A7000C02D0 /* NSObject+Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
-		10220278215090A7000C02D0 /* NSObject+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
 		1022029821509441000C02D0 /* SZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1022029A21509441000C02D0 /* SZKitFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZKitFramework.h; sourceTree = "<group>"; };
 		1022029B21509441000C02D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		102202A521509543000C02D0 /* SZKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZKit.h; sourceTree = "<group>"; };
+		102202B02150A6D1000C02D0 /* SZFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZFileManager.h; sourceTree = "<group>"; };
+		102202B12150A6D1000C02D0 /* SZFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZFileManager.m; sourceTree = "<group>"; };
+		102202B42150AB54000C02D0 /* GlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		102202B62150F07B000C02D0 /* NSString+SZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SZ.h"; sourceTree = "<group>"; };
+		102202B72150F07B000C02D0 /* NSString+SZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SZ.m"; sourceTree = "<group>"; };
+		102202B92151DAFA000C02D0 /* NSObject+SZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SZ.h"; sourceTree = "<group>"; };
+		102202BA2151DAFA000C02D0 /* NSObject+SZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SZ.m"; sourceTree = "<group>"; };
+		102202C721522FC1000C02D0 /* UILabel+SZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+SZ.h"; sourceTree = "<group>"; };
+		102202C821522FC1000C02D0 /* UILabel+SZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SZ.m"; sourceTree = "<group>"; };
+		102202CA215230C1000C02D0 /* NSDateFormatter+SZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+SZ.h"; sourceTree = "<group>"; };
+		102202CB215230C1000C02D0 /* NSDateFormatter+SZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+SZ.m"; sourceTree = "<group>"; };
+		102202D1215231D6000C02D0 /* NSDate+SZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+SZ.h"; sourceTree = "<group>"; };
+		102202D2215231D6000C02D0 /* NSDate+SZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SZ.m"; sourceTree = "<group>"; };
+		102202D521523407000C02D0 /* UIViewController+SZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SZ.h"; sourceTree = "<group>"; };
+		102202D621523407000C02D0 /* UIViewController+SZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SZ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +130,8 @@
 		1022025F21508DB4000C02D0 /* SZKit */ = {
 			isa = PBXGroup;
 			children = (
+				102202B32150AB3D000C02D0 /* Global */,
+				102202AE2150A692000C02D0 /* Manager */,
 				1022027621509086000C02D0 /* Category */,
 				1022026021508DB4000C02D0 /* AppDelegate.h */,
 				1022026121508DB4000C02D0 /* AppDelegate.m */,
@@ -123,8 +150,18 @@
 		1022027621509086000C02D0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				10220277215090A7000C02D0 /* NSObject+Log.h */,
-				10220278215090A7000C02D0 /* NSObject+Log.m */,
+				102202B62150F07B000C02D0 /* NSString+SZ.h */,
+				102202B72150F07B000C02D0 /* NSString+SZ.m */,
+				102202CA215230C1000C02D0 /* NSDateFormatter+SZ.h */,
+				102202CB215230C1000C02D0 /* NSDateFormatter+SZ.m */,
+				102202D1215231D6000C02D0 /* NSDate+SZ.h */,
+				102202D2215231D6000C02D0 /* NSDate+SZ.m */,
+				102202C721522FC1000C02D0 /* UILabel+SZ.h */,
+				102202C821522FC1000C02D0 /* UILabel+SZ.m */,
+				102202B92151DAFA000C02D0 /* NSObject+SZ.h */,
+				102202BA2151DAFA000C02D0 /* NSObject+SZ.m */,
+				102202D521523407000C02D0 /* UIViewController+SZ.h */,
+				102202D621523407000C02D0 /* UIViewController+SZ.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -138,6 +175,31 @@
 			path = SZKitFramework;
 			sourceTree = "<group>";
 		};
+		102202AE2150A692000C02D0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				102202AF2150A6BC000C02D0 /* FileManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		102202AF2150A6BC000C02D0 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				102202B02150A6D1000C02D0 /* SZFileManager.h */,
+				102202B12150A6D1000C02D0 /* SZFileManager.m */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		102202B32150AB3D000C02D0 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				102202B42150AB54000C02D0 /* GlobalDefine.h */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -145,8 +207,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102202B52150AB54000C02D0 /* GlobalDefine.h in Headers */,
 				102202A621509543000C02D0 /* SZKit.h in Headers */,
-				102202AB21509CA7000C02D0 /* NSObject+Log.h in Headers */,
 				1022029C21509441000C02D0 /* SZKitFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,8 +315,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1022026521508DB4000C02D0 /* ViewController.m in Sources */,
+				102202B22150A6D1000C02D0 /* SZFileManager.m in Sources */,
 				1022027021508DB5000C02D0 /* main.m in Sources */,
-				10220279215090A7000C02D0 /* NSObject+Log.m in Sources */,
+				102202BB2151DAFA000C02D0 /* NSObject+SZ.m in Sources */,
+				102202D3215231D6000C02D0 /* NSDate+SZ.m in Sources */,
+				102202D721523407000C02D0 /* UIViewController+SZ.m in Sources */,
+				102202C921522FC1000C02D0 /* UILabel+SZ.m in Sources */,
+				102202B82150F07B000C02D0 /* NSString+SZ.m in Sources */,
+				102202CC215230C1000C02D0 /* NSDateFormatter+SZ.m in Sources */,
 				1022026221508DB4000C02D0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +331,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				102202A42150944C000C02D0 /* NSObject+Log.m in Sources */,
+				102202CD215230CB000C02D0 /* NSString+SZ.m in Sources */,
+				102202D0215230D1000C02D0 /* NSObject+SZ.m in Sources */,
+				102202D4215231D8000C02D0 /* NSDate+SZ.m in Sources */,
+				102202D921523412000C02D0 /* SZFileManager.m in Sources */,
+				102202CF215230CF000C02D0 /* UILabel+SZ.m in Sources */,
+				102202CE215230CC000C02D0 /* NSDateFormatter+SZ.m in Sources */,
+				102202D82152340A000C02D0 /* UIViewController+SZ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
