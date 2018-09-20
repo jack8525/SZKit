@@ -44,10 +44,10 @@
 		1022039021536F8D000C02D0 /* SZKit_Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022038E21536F8D000C02D0 /* SZKit_Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1022039121536F8D000C02D0 /* SZKit_Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 1022038F21536F8D000C02D0 /* SZKit_Header.m */; };
 		1022039221536F8D000C02D0 /* SZKit_Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 1022038F21536F8D000C02D0 /* SZKit_Header.m */; };
-		102203A121538521000C02D0 /* UIView+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022039F21538520000C02D0 /* UIView+SZ.h */; };
+		102203A121538521000C02D0 /* UIView+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022039F21538520000C02D0 /* UIView+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		102203A221538521000C02D0 /* UIView+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102203A021538521000C02D0 /* UIView+SZ.m */; };
 		102203A321538521000C02D0 /* UIView+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102203A021538521000C02D0 /* UIView+SZ.m */; };
-		102203A7215386C0000C02D0 /* UIButton+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102203A5215386C0000C02D0 /* UIButton+SZ.h */; };
+		102203A7215386C0000C02D0 /* UIButton+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102203A5215386C0000C02D0 /* UIButton+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		102203A8215386C0000C02D0 /* UIButton+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102203A6215386C0000C02D0 /* UIButton+SZ.m */; };
 		102203A9215386C0000C02D0 /* UIButton+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102203A6215386C0000C02D0 /* UIButton+SZ.m */; };
 /* End PBXBuildFile section */
@@ -257,15 +257,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				102202E02152413E000C02D0 /* UIViewController+SZ.h in Headers */,
-				102203A7215386C0000C02D0 /* UIButton+SZ.h in Headers */,
 				102202DF21524139000C02D0 /* NSObject+SZ.h in Headers */,
 				102202DD21524132000C02D0 /* NSDate+SZ.h in Headers */,
-				102203A121538521000C02D0 /* UIView+SZ.h in Headers */,
 				102202DE21524136000C02D0 /* UILabel+SZ.h in Headers */,
 				102202DB2152412B000C02D0 /* NSDateFormatter+SZ.h in Headers */,
 				102202DA21524126000C02D0 /* NSString+SZ.h in Headers */,
 				102202DC2152412E000C02D0 /* SZFileManager.h in Headers */,
+				102203A7215386C0000C02D0 /* UIButton+SZ.h in Headers */,
 				1022039021536F8D000C02D0 /* SZKit_Header.h in Headers */,
+				102203A121538521000C02D0 /* UIView+SZ.h in Headers */,
 				1022038821536DF2000C02D0 /* SZGlobalDefine.h in Headers */,
 				1022029C21509441000C02D0 /* SZKitFramework.h in Headers */,
 			);
