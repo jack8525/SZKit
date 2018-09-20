@@ -24,6 +24,4 @@
  @param flag 是否有动画
  */
 - (void)presentNavViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag;
-
-- (void)mas;
 @end

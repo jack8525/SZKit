@@ -1,1 +1,7 @@
+github "AFNetworking/AFNetworking" "3.2.1"
+github "SVProgressHUD/SVProgressHUD" "2.2.5"
 github "SnapKit/Masonry" "v1.1.0"
+github "banchichen/TZImagePickerController" "3.0.7"
+github "hackiftekhar/IQKeyboardManager" "v6.1.1"
+github "ibireme/YYKit" "1.0.9"
+github "rs/SDWebImage" "4.4.2"

@@ -8,8 +8,6 @@
 
 #import "UIViewController+SZ.h"
 
-#import <Masonry/Masonry.h>
-
 @implementation UIViewController (SZ)
 
 - (void)presentNavViewController:(UIViewController *)viewControllerToPresent
@@ -21,17 +19,5 @@
 {
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewControllerToPresent];
     [self presentViewController:nav animated:flag completion:nil];
-}
-
-- (void)mas
-{
-    UIView *view = [[UIView alloc]init];
-    view.backgroundColor = [UIColor redColor];
-    [self.view addSubview:view];
-    
-    [view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view);
-        make.width.height.equalTo(@200);
-    }];
 }
 @end
