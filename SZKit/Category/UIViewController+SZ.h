@@ -25,4 +25,5 @@
  */
 - (void)presentNavViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag;
 
+- (void)mas;
 @end

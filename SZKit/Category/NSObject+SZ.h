@@ -14,4 +14,5 @@
 
 - (void)endEditing;
 
++ (void)showLoading;
 @end
