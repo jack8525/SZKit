@@ -11,9 +11,9 @@
 
 @implementation UILabel (SZ)
 
-- (CGFloat)textHeightWithMaxWidth:(CGFloat)maxWidth
+- (CGFloat)sz_textHeightWithMaxWidth:(CGFloat)maxWidth
 {
-    return [self.text heightWithMaxWidth:maxWidth font:self.font];
+    return [self.text sz_heightWithMaxWidth:maxWidth font:self.font];
 }
 
 @end

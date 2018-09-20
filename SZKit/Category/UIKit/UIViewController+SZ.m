@@ -10,12 +10,12 @@
 
 @implementation UIViewController (SZ)
 
-- (void)presentNavViewController:(UIViewController *)viewControllerToPresent
+- (void)sz_presentNavViewController:(UIViewController *)viewControllerToPresent
 {
-    [self presentNavViewController:viewControllerToPresent animated:true];
+    [self sz_presentNavViewController:viewControllerToPresent animated:true];
 }
 
-- (void)presentNavViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag
+- (void)sz_presentNavViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag
 {
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewControllerToPresent];
     [self presentViewController:nav animated:flag completion:nil];

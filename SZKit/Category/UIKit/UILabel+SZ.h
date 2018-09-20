@@ -16,6 +16,6 @@
  @param maxWidth 最大宽度
  @return 高度
  */
-- (CGFloat)textHeightWithMaxWidth:(CGFloat)maxWidth;
+- (CGFloat)sz_textHeightWithMaxWidth:(CGFloat)maxWidth;
 
 @end

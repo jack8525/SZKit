@@ -11,13 +11,18 @@
 
 @implementation NSObject (SZ)
 
-+ (void)endEditing
++ (void)sz_endEditing
 {
     [[UIApplication sharedApplication].keyWindow endEditing:true];
 }
 
-- (void)endEditing
+- (void)sz_endEditing
 {
     [[UIApplication sharedApplication].keyWindow endEditing:true];
+}
+
++ (void)sz_showLoading
+{
+    
 }
 @end

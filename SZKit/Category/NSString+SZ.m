@@ -10,7 +10,7 @@
 
 @implementation NSString (SZ)
 
-- (CGFloat)heightWithMaxWidth:(CGFloat)maxWidth font:(UIFont *)font
+- (CGFloat)sz_heightWithMaxWidth:(CGFloat)maxWidth font:(UIFont *)font
 {
     UIFont *defaultFont = font;
     if (!defaultFont) defaultFont = [[UILabel alloc]init].font;
@@ -32,7 +32,7 @@
     return size.height;
 }
 
-- (NSString *)appendHTMLString
+- (NSString *)sz_appendHTMLString
 {
     NSMutableString *newHtml = [NSMutableString stringWithString:self];
     NSString *regex = @"(width)=[\"]+[0-9]+[\"]";
@@ -81,7 +81,7 @@
     return webConStr;
 }
 
-- (BOOL)validateIDCardNumber
+- (BOOL)sz_validateIDCardNumber
 {
     NSString *value = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSInteger length =0;

@@ -10,9 +10,9 @@
 
 @implementation NSDate (SZ)
 
-- (NSString *)stringWithFormat:(NSString *)format
+- (NSString *)sz_stringWithFormat:(NSString *)format
 {
-    NSDateFormatter *dateFormatter = [NSDateFormatter dateFormatterWithFormat:format];
+    NSDateFormatter *dateFormatter = [NSDateFormatter sz_dateFormatterWithFormat:format];
     return [dateFormatter stringFromDate:self];
 }
 

@@ -15,7 +15,7 @@
 
  @param viewControllerToPresent 要推出的控制器
  */
-- (void)presentNavViewController:(UIViewController *)viewControllerToPresent;
+- (void)sz_presentNavViewController:(UIViewController *)viewControllerToPresent;
 
 /**
  推出含有导航栏的控制器
@@ -23,5 +23,5 @@
  @param viewControllerToPresent 要推出的控制器
  @param flag 是否有动画
  */
-- (void)presentNavViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag;
+- (void)sz_presentNavViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag;
 @end

@@ -17,6 +17,6 @@
  @param format 时间格式
  @return 时间字符串
  */
-- (NSString *)stringWithFormat:(NSString *)format;
+- (NSString *)sz_stringWithFormat:(NSString *)format;
 
 @end

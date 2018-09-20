@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString * const DateFormtyMdHms = @"yyyy-MM-dd HH:mm:ss";
-static NSString * const DateFormtyMdHm = @"yyyy-MM-dd HH:mm";
-static NSString * const DateFormtyMd = @"yyyy-MM-dd";
-static NSString * const DateFormtyM = @"yyyy-MM";
-static NSString * const DateFormtHm = @"HH:mm";
+static NSString * const SZDateFormtyMdHms = @"yyyy-MM-dd HH:mm:ss";
+static NSString * const SZDateFormtyMdHm = @"yyyy-MM-dd HH:mm";
+static NSString * const SZDateFormtyMd = @"yyyy-MM-dd";
+static NSString * const SZDateFormtyM = @"yyyy-MM";
+static NSString * const SZDateFormtHm = @"HH:mm";
 
 @interface NSDateFormatter (SZ)
 
@@ -22,6 +22,6 @@ static NSString * const DateFormtHm = @"HH:mm";
  @param format 时间格式
  @return NSDateFormatter
  */
-+ (instancetype)dateFormatterWithFormat:(NSString *)format;
++ (instancetype)sz_dateFormatterWithFormat:(NSString *)format;
 
 @end

@@ -18,19 +18,19 @@
  @param font 字体
  @return 高度
  */
-- (CGFloat)heightWithMaxWidth:(CGFloat)maxWidth font:(UIFont *)font;
+- (CGFloat)sz_heightWithMaxWidth:(CGFloat)maxWidth font:(UIFont *)font;
 
 /**
  给内容添加html格式
 
  @return html格式的内容
  */
-- (NSString *)appendHTMLString;
+- (NSString *)sz_appendHTMLString;
 
 /**
  验证身份证格式
 
  @return 布尔值
  */
-- (BOOL)validateIDCardNumber;
+- (BOOL)sz_validateIDCardNumber;
 @end

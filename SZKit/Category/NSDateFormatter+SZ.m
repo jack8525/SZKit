@@ -10,7 +10,7 @@
 
 @implementation NSDateFormatter (SZ)
 
-+ (instancetype)dateFormatterWithFormat:(NSString *)format
++ (instancetype)sz_dateFormatterWithFormat:(NSString *)format
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     dateFormatter.dateFormat = format;

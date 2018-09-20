@@ -10,9 +10,9 @@
 
 @interface NSObject (SZ)
 
-+ (void)endEditing;
++ (void)sz_endEditing;
 
-- (void)endEditing;
+- (void)sz_endEditing;
 
-+ (void)showLoading;
++ (void)sz_showLoading;
 @end
