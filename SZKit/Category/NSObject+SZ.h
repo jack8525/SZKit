@@ -7,12 +7,31 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSObject (SZ)
 
+//获取当前控制器
++ (UIViewController *)getCurrentViewController;
+
+- (UIViewController *)getCurrentViewController;
+
+//关闭键盘
 + (void)sz_endEditing;
 
 - (void)sz_endEditing;
 
-+ (void)sz_showLoading;
+//加载指示器
++ (void)sz_showHUDLoading;
+
++ (void)sz_hideHUD;
+
++ (void)sz_showHUDHint:(NSString *)hint;
+
+- (void)sz_showHUDLoading;
+
+- (void)sz_hideHUD;
+
+- (void)sz_showHUDHint:(NSString *)hint;
+
 @end

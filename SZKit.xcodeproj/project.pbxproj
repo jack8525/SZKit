@@ -37,7 +37,6 @@
 		102202DE21524136000C02D0 /* UILabel+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202C721522FC1000C02D0 /* UILabel+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		102202DF21524139000C02D0 /* NSObject+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202B92151DAFA000C02D0 /* NSObject+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		102202E02152413E000C02D0 /* UIViewController+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102202D521523407000C02D0 /* UIViewController+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1022033121533E47000C02D0 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1022030521532FB6000C02D0 /* Masonry.framework */; };
 		1022038321536D57000C02D0 /* SZGlobalDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1022038221536D57000C02D0 /* SZGlobalDefine.m */; };
 		1022038421536D66000C02D0 /* SZGlobalDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1022038221536D57000C02D0 /* SZGlobalDefine.m */; };
 		1022038821536DF2000C02D0 /* SZGlobalDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022037F21536CC4000C02D0 /* SZGlobalDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,6 +49,10 @@
 		102203A7215386C0000C02D0 /* UIButton+SZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 102203A5215386C0000C02D0 /* UIButton+SZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		102203A8215386C0000C02D0 /* UIButton+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102203A6215386C0000C02D0 /* UIButton+SZ.m */; };
 		102203A9215386C0000C02D0 /* UIButton+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 102203A6215386C0000C02D0 /* UIButton+SZ.m */; };
+		102203D72154BEC0000C02D0 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102203D62154BEC0000C02D0 /* SVProgressHUD.framework */; };
+		102203DA2154C06E000C02D0 /* Foundation+log.h in Headers */ = {isa = PBXBuildFile; fileRef = 102203D82154C06E000C02D0 /* Foundation+log.h */; };
+		102203DB2154C06E000C02D0 /* Foundation+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 102203D92154C06E000C02D0 /* Foundation+log.m */; };
+		102203DC2154C06E000C02D0 /* Foundation+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 102203D92154C06E000C02D0 /* Foundation+log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,9 @@
 		102203A021538521000C02D0 /* UIView+SZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SZ.m"; sourceTree = "<group>"; };
 		102203A5215386C0000C02D0 /* UIButton+SZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+SZ.h"; sourceTree = "<group>"; };
 		102203A6215386C0000C02D0 /* UIButton+SZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SZ.m"; sourceTree = "<group>"; };
+		102203D62154BEC0000C02D0 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		102203D82154C06E000C02D0 /* Foundation+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+log.h"; sourceTree = "<group>"; };
+		102203D92154C06E000C02D0 /* Foundation+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+log.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1022033121533E47000C02D0 /* Masonry.framework in Frameworks */,
+				102203D72154BEC0000C02D0 /* SVProgressHUD.framework in Frameworks */,
 				1022029F21509441000C02D0 /* SZKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +193,8 @@
 				102202D2215231D6000C02D0 /* NSDate+SZ.m */,
 				102202B92151DAFA000C02D0 /* NSObject+SZ.h */,
 				102202BA2151DAFA000C02D0 /* NSObject+SZ.m */,
+				102203D82154C06E000C02D0 /* Foundation+log.h */,
+				102203D92154C06E000C02D0 /* Foundation+log.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 		1022030421532FB6000C02D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				102203D62154BEC0000C02D0 /* SVProgressHUD.framework */,
 				1022030521532FB6000C02D0 /* Masonry.framework */,
 			);
 			name = Frameworks;
@@ -258,6 +267,7 @@
 			files = (
 				102202E02152413E000C02D0 /* UIViewController+SZ.h in Headers */,
 				102202DF21524139000C02D0 /* NSObject+SZ.h in Headers */,
+				102203DA2154C06E000C02D0 /* Foundation+log.h in Headers */,
 				102202DD21524132000C02D0 /* NSDate+SZ.h in Headers */,
 				102202DE21524136000C02D0 /* UILabel+SZ.h in Headers */,
 				102202DB2152412B000C02D0 /* NSDateFormatter+SZ.h in Headers */,
@@ -375,7 +385,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 			);
 			outputPaths = (
 			);
@@ -401,6 +411,7 @@
 				102202D721523407000C02D0 /* UIViewController+SZ.m in Sources */,
 				1022038321536D57000C02D0 /* SZGlobalDefine.m in Sources */,
 				102202C921522FC1000C02D0 /* UILabel+SZ.m in Sources */,
+				102203DB2154C06E000C02D0 /* Foundation+log.m in Sources */,
 				102202B82150F07B000C02D0 /* NSString+SZ.m in Sources */,
 				102202CC215230C1000C02D0 /* NSDateFormatter+SZ.m in Sources */,
 				1022026221508DB4000C02D0 /* AppDelegate.m in Sources */,
@@ -422,6 +433,7 @@
 				1022038421536D66000C02D0 /* SZGlobalDefine.m in Sources */,
 				102202CE215230CC000C02D0 /* NSDateFormatter+SZ.m in Sources */,
 				102202D82152340A000C02D0 /* UIViewController+SZ.m in Sources */,
+				102203DC2154C06E000C02D0 /* Foundation+log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
