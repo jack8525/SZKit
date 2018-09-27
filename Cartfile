@@ -1,7 +1,1 @@
-#github "AFNetworking/AFNetworking" ~> 3.0
-#github "SnapKit/Masonry"
-#github "hackiftekhar/IQKeyboardManager"
 github "SVProgressHUD/SVProgressHUD"
-#github "banchichen/TZImagePickerController"
-#github "rs/SDWebImage"
-#github "ibireme/YYKit"

@@ -12,9 +12,9 @@
 @interface NSObject (SZ)
 
 //获取当前控制器
-+ (UIViewController *)getCurrentViewController;
++ (UIViewController *)sz_getCurrentViewController;
 
-- (UIViewController *)getCurrentViewController;
+- (UIViewController *)sz_getCurrentViewController;
 
 //关闭键盘
 + (void)sz_endEditing;

@@ -12,12 +12,13 @@
 
 @implementation NSObject (SZ)
 
-- (UIViewController *)getCurrentViewController
+#pragma mark -
+- (UIViewController *)sz_getCurrentViewController
 {
-    return [NSObject getCurrentViewController];
+    return [NSObject sz_getCurrentViewController];
 }
 
-+ (UIViewController *)getCurrentViewController {
++ (UIViewController *)sz_getCurrentViewController {
     
     UIWindow *window = [[UIApplication sharedApplication].windows firstObject];
     if (!window) {
@@ -46,6 +47,7 @@
     return  (UIViewController *)nextResponder;
 }
 
+#pragma mark -
 + (void)sz_endEditing
 {
     [[UIApplication sharedApplication].keyWindow endEditing:true];
@@ -56,9 +58,22 @@
     [[UIApplication sharedApplication].keyWindow endEditing:true];
 }
 
+#pragma mark -
++ (void)initConfig
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+        [SVProgressHUD setMaximumDismissTimeInterval:30.0];
+        [SVProgressHUD setMinimumDismissTimeInterval:1.0];
+        [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    });
+}
+
 + (void)sz_showHUDLoading
 {
-    [SVProgressHUD showWithStatus:@"加载中..."];
+    [NSObject initConfig];
+    [SVProgressHUD show];
 }
 
 + (void)sz_hideHUD
@@ -68,6 +83,7 @@
 
 + (void)sz_showHUDHint:(NSString *)hint
 {
+    [NSObject initConfig];
     [SVProgressHUD showInfoWithStatus:hint];
 }
 
