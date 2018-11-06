@@ -10,6 +10,8 @@
 
 @interface UIButton (SZ)
 
+@property (nonatomic, copy) void(^addActionBlock)(UIButton *button);
+
 - (void)addActionBlock:(void(^)(UIButton *button))actionBlock;
 
 @end

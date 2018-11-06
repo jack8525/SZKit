@@ -10,6 +10,7 @@
 
 #import "SZGlobalDefine.h"
 #import "SZFileManager.h"
+#import "SZTextField.h"
 
 #import "UILabel+SZ.h"
 #import "UIView+SZ.h"

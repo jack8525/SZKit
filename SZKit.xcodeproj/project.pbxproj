@@ -53,6 +53,9 @@
 		102203DA2154C06E000C02D0 /* Foundation+log.h in Headers */ = {isa = PBXBuildFile; fileRef = 102203D82154C06E000C02D0 /* Foundation+log.h */; };
 		102203DB2154C06E000C02D0 /* Foundation+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 102203D92154C06E000C02D0 /* Foundation+log.m */; };
 		102203DC2154C06E000C02D0 /* Foundation+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 102203D92154C06E000C02D0 /* Foundation+log.m */; };
+		109613CF21916DDD0050477C /* SZTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 109613CD21916DDD0050477C /* SZTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		109613D021916DDD0050477C /* SZTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 109613CE21916DDD0050477C /* SZTextField.m */; };
+		109613D121916DDD0050477C /* SZTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 109613CE21916DDD0050477C /* SZTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +122,8 @@
 		102203D62154BEC0000C02D0 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		102203D82154C06E000C02D0 /* Foundation+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+log.h"; sourceTree = "<group>"; };
 		102203D92154C06E000C02D0 /* Foundation+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+log.m"; sourceTree = "<group>"; };
+		109613CD21916DDD0050477C /* SZTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTextField.h; sourceTree = "<group>"; };
+		109613CE21916DDD0050477C /* SZTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +168,7 @@
 		1022025F21508DB4000C02D0 /* SZKit */ = {
 			isa = PBXGroup;
 			children = (
+				109613CC21916D7C0050477C /* UIKit */,
 				102202B32150AB3D000C02D0 /* Global */,
 				102202AE2150A692000C02D0 /* Manager */,
 				1022027621509086000C02D0 /* Category */,
@@ -184,7 +190,7 @@
 		1022027621509086000C02D0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				102203A421538685000C02D0 /* UIKit */,
+				102203A421538685000C02D0 /* UIKit+SZ */,
 				102202B62150F07B000C02D0 /* NSString+SZ.h */,
 				102202B72150F07B000C02D0 /* NSString+SZ.m */,
 				102202CA215230C1000C02D0 /* NSDateFormatter+SZ.h */,
@@ -243,7 +249,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		102203A421538685000C02D0 /* UIKit */ = {
+		102203A421538685000C02D0 /* UIKit+SZ */ = {
 			isa = PBXGroup;
 			children = (
 				102202C721522FC1000C02D0 /* UILabel+SZ.h */,
@@ -254,6 +260,15 @@
 				102203A6215386C0000C02D0 /* UIButton+SZ.m */,
 				102202D521523407000C02D0 /* UIViewController+SZ.h */,
 				102202D621523407000C02D0 /* UIViewController+SZ.m */,
+			);
+			path = "UIKit+SZ";
+			sourceTree = "<group>";
+		};
+		109613CC21916D7C0050477C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				109613CD21916DDD0050477C /* SZTextField.h */,
+				109613CE21916DDD0050477C /* SZTextField.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -275,6 +290,7 @@
 				102202DC2152412E000C02D0 /* SZFileManager.h in Headers */,
 				102203A7215386C0000C02D0 /* UIButton+SZ.h in Headers */,
 				1022039021536F8D000C02D0 /* SZKit_Header.h in Headers */,
+				109613CF21916DDD0050477C /* SZTextField.h in Headers */,
 				102203A121538521000C02D0 /* UIView+SZ.h in Headers */,
 				1022038821536DF2000C02D0 /* SZGlobalDefine.h in Headers */,
 				1022029C21509441000C02D0 /* SZKitFramework.h in Headers */,
@@ -391,7 +407,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -414,6 +430,7 @@
 				102203DB2154C06E000C02D0 /* Foundation+log.m in Sources */,
 				102202B82150F07B000C02D0 /* NSString+SZ.m in Sources */,
 				102202CC215230C1000C02D0 /* NSDateFormatter+SZ.m in Sources */,
+				109613D021916DDD0050477C /* SZTextField.m in Sources */,
 				1022026221508DB4000C02D0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +444,7 @@
 				102202D0215230D1000C02D0 /* NSObject+SZ.m in Sources */,
 				102203A321538521000C02D0 /* UIView+SZ.m in Sources */,
 				102202D4215231D8000C02D0 /* NSDate+SZ.m in Sources */,
+				109613D121916DDD0050477C /* SZTextField.m in Sources */,
 				102203A9215386C0000C02D0 /* UIButton+SZ.m in Sources */,
 				102202D921523412000C02D0 /* SZFileManager.m in Sources */,
 				102202CF215230CF000C02D0 /* UILabel+SZ.m in Sources */,

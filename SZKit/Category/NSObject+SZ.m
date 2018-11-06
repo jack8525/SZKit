@@ -87,6 +87,18 @@
     [SVProgressHUD showInfoWithStatus:hint];
 }
 
++ (void)sz_showSuccessHUDHint:(NSString *)hint
+{
+    [NSObject initConfig];
+    [SVProgressHUD showSuccessWithStatus:hint];
+}
+
++ (void)sz_showErrorHUDHint:(NSString *)hint
+{
+    [NSObject initConfig];
+    [SVProgressHUD showErrorWithStatus:hint];
+}
+
 - (void)sz_showHUDLoading
 {
     [NSObject sz_showHUDLoading];
@@ -100,5 +112,15 @@
 - (void)sz_showHUDHint:(NSString *)hint
 {
     [NSObject sz_showHUDHint:hint];
+}
+
+- (void)sz_showSuccessHUDHint:(NSString *)hint
+{
+    [NSObject sz_showSuccessHUDHint:hint];
+}
+
+- (void)sz_showErrorHUDHint:(NSString *)hint
+{
+    [NSObject sz_showErrorHUDHint:hint];
 }
 @end

@@ -24,4 +24,21 @@
  @param flag 是否有动画
  */
 - (void)sz_presentNavViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag;
+
+/**
+ 推出alert控制器
+
+ @param title 内容
+ @param completion 点击回调
+ */
+- (void)sz_presentAlertView:(NSString *)title completion:(void(^)(NSInteger index))completion;
+
+/**
+ 推出alert控制器
+
+ @param title 内容
+ @param actionTitles 按钮标题
+ @param completion 点击回调
+ */
+- (void)sz_presentAlertView:(NSString *)title actionTitles:(NSArray<NSString *> *)actionTitles completion:(void (^)(NSInteger index))completion;
 @end

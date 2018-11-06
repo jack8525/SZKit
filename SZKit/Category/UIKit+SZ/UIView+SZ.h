@@ -12,4 +12,10 @@
 
 @property (nonatomic, assign) CGFloat fontSize;
 
+- (void)startActivity;
+
+- (void)stopActivity;
+
+- (BOOL)isActiviting;
+
 @end

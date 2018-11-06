@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 
 #define SZ_SCREEN_WIDTH     [UIScreen mainScreen].bounds.size.width
-#define SZ_SCREEH_HEIGHT    [UIScreen mainScreen].bounds.size.height
+#define SZ_SCREEN_HEIGHT    [UIScreen mainScreen].bounds.size.height
 
-// 将用int表示的颜色(rgba)转换为UIColor
+// 十六位颜色 转 UIColor
 #define HEXCOLOR(c) [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:((c)&0xFF)/255.0 alpha:1.0]
+//RGB 转 UIColor
+#define RGB(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 
 @interface SZGlobalDefine : NSObject
 

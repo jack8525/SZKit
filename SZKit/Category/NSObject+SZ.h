@@ -28,10 +28,18 @@
 
 + (void)sz_showHUDHint:(NSString *)hint;
 
++ (void)sz_showSuccessHUDHint:(NSString *)hint;
+
++ (void)sz_showErrorHUDHint:(NSString *)hint;
+
 - (void)sz_showHUDLoading;
 
 - (void)sz_hideHUD;
 
 - (void)sz_showHUDHint:(NSString *)hint;
+
+- (void)sz_showSuccessHUDHint:(NSString *)hint;
+
+- (void)sz_showErrorHUDHint:(NSString *)hint;
 
 @end

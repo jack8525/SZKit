@@ -17,6 +17,11 @@
 
 @implementation UIButton (SZ)
 
+- (void)setAddActionBlock:(void (^)(UIButton *))addActionBlock
+{
+    [self addActionBlock:addActionBlock];
+}
+
 static const char ActionBlockKey = '\0';
 - (void)setActionBlock:(void (^)(UIButton *))actionBlock
 {
