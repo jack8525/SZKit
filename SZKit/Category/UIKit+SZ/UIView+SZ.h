@@ -10,6 +10,8 @@
 
 @interface UIView (SZ)
 
+- (UIViewController *)superViewController;
+
 @property (nonatomic, assign) CGFloat fontSize;
 
 - (void)startActivity;

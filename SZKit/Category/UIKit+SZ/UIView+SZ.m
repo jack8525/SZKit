@@ -12,6 +12,17 @@
 
 @implementation UIView (SZ)
 
+- (UIViewController *)superViewController
+{
+    for (UIView* next = [self superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
+}
+
 static const char FontSizeKey = '\0';
 - (void)setFontSize:(CGFloat)fontSize
 {
@@ -38,7 +49,8 @@ static const char FontSizeKey = '\0';
     return [objc_getAssociatedObject(self, &FontSizeKey) floatValue];
 }
 
-#define UIActivityIndicatorView_Tag 19237434325
+static NSInteger const UIActivityIndicatorView_Tag = 19238421;
+
 - (void)startActivity
 {
     UIActivityIndicatorView *view = [self viewWithTag:UIActivityIndicatorView_Tag];
